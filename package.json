@@ -11,7 +11,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.5.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^6.0.0",
+    "mongoose": "^6.13.8",
     "stripe": "^8.174.0",
     "twilio": "^5.6.1"
   },
