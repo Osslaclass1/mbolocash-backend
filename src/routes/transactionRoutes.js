@@ -4,6 +4,7 @@ const router = express.Router();
 const Transaction = require('../models/Transaction');
 const User = require('../models/User');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const twilio = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN); // Add this
 const auth = require('../middleware/auth');
 
 router.post('/send', auth, async (req, res) => {
