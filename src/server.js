@@ -6,6 +6,9 @@ const transactionRoutes = require('./routes/transactionRoutes');
 const app = express();
 app.use(express.json());
 
+// Test route
+app.get('/test', (req, res) => res.send('Server is running'));
+
 // Connect to MongoDB
 connectDB();
 
